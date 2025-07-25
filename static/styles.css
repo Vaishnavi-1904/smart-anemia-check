@@ -1,37 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('/static/anemia-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
+    background-color: white;
     padding: 30px;
-    margin: 40px auto;
-    max-width: 600px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 700px;
 }
 
 h1 {
+    color: maroon;
     text-align: center;
-    color: #800000;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 button {
-    background-color: #800000;
+    background-color: maroon;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #a52a2a;
+    background-color: #8b0000;
+}
+
+.result-box {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #fff0f0;
+    border-left: 6px solid maroon;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.disclaimer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: gray;
+    text-align: center;
 }
