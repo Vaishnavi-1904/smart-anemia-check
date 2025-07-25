@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anemia Risk Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Anemia Risk Result</h1>
+        <p><strong>Risk Percentage:</strong> {{ risk_score }}%</p>
+        <p><strong>Risk Level:</strong> {{ risk_level }}</p>
+
+        <h3>🥗 Diet Plan</h3>
+        <p>{{ diet_plan | safe }}</p>
+
+        <h3>🩺 Doctor's Advice</h3>
+        <p>{{ doctor_advice }}</p>
+
+        <a href="/" class="back-btn">⬅️ Back to Home</a>
+    </div>
+</body>
+</html>
